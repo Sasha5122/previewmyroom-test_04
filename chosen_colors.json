@@ -1,0 +1,1409 @@
+{
+  "notes": "10 repaint plans with clear color differences and varied professional schemes for the room shown.",
+  "assumptions_us": {
+    "wall_area_sqft": 430.0,
+    "coats": 2,
+    "coverage_sqft_per_gallon_per_coat": 350.0,
+    "waste_factor": 1.12,
+    "primer_needed": false,
+    "primer_coats": 1,
+    "primer_coverage_sqft_per_gallon_per_coat": 300.0,
+    "currency": "USD",
+    "paint_price_per_gallon": 42.0,
+    "primer_price_per_gallon": 22.0,
+    "supplies_flat_cost": 55.0,
+    "labor_mode": "hourly",
+    "labor_rate_per_hour": 35.0,
+    "hours_for_prep": 3.5,
+    "hours_per_coat": 2.5,
+    "labor_rate_per_sqft": 0.85,
+    "location_hint": "USA",
+    "suggested_store_types": [
+      "Sherwin-Williams store",
+      "Benjamin Moore dealer",
+      "Home Depot (Behr)",
+      "Lowe's (Valspar)",
+      "Local paint/hardware store"
+    ]
+  },
+  "images": [
+    {
+      "index": 1,
+      "type": "single",
+      "image": "01_single.jpg",
+      "colors": [
+        {
+          "name": "Soft Sage Green",
+          "hex": "#8A9A5B",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Brings natural calmness while strongly contrasting with the original beige."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Soft Sage Green",
+            "hex": "#8A9A5B",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 2,
+      "type": "single",
+      "image": "02_single.jpg",
+      "colors": [
+        {
+          "name": "Dusty Blue",
+          "hex": "#5F7D95",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Adds cool serenity, noticeably different and suitable for a restful space."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Dusty Blue",
+            "hex": "#5F7D95",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 3,
+      "type": "single",
+      "image": "03_single.jpg",
+      "colors": [
+        {
+          "name": "Warm Terracotta",
+          "hex": "#B6593A",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Warmer and earthier tone, distinct from the current neutral beige."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Warm Terracotta",
+            "hex": "#B6593A",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 4,
+      "type": "single",
+      "image": "04_single.jpg",
+      "colors": [
+        {
+          "name": "Muted Lavender",
+          "hex": "#86688B",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Gentle purple tone creating subtle moodiness and contrast."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Muted Lavender",
+            "hex": "#86688B",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 5,
+      "type": "single",
+      "image": "05_single.jpg",
+      "colors": [
+        {
+          "name": "Slate Gray",
+          "hex": "#646E78",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Strong gray tone offering a sleek, modern edge."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Slate Gray",
+            "hex": "#646E78",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 6,
+      "type": "single",
+      "image": "06_single.jpg",
+      "colors": [
+        {
+          "name": "Deep Olive",
+          "hex": "#556B2F",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Dark, rich green giving depth and noticeable difference."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Deep Olive",
+            "hex": "#556B2F",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 7,
+      "type": "single",
+      "image": "07_single.jpg",
+      "colors": [
+        {
+          "name": "Charcoal Slate",
+          "hex": "#3E4650",
+          "role": "all_walls",
+          "area_percent": 100,
+          "why": "Light yet distinct blue tone to brighten and freshen the room. (Adjusted to ensure noticeable contrast.)"
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Charcoal Slate",
+            "hex": "#3E4650",
+            "role": "all_walls",
+            "area_percent": 100,
+            "wall_area_sqft": 430.0,
+            "paint_needed_gallons_estimate": 2.75,
+            "purchase_recommendation": {
+              "gallons": 3,
+              "quarts": 0,
+              "total_gallons": 3.0
+            },
+            "paint_cost_estimate": 126.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 8,
+      "type": "pro_2to3",
+      "image": "08_pro_2to3.jpg",
+      "colors": [
+        {
+          "name": "Creamy White",
+          "hex": "#F1E9D2",
+          "role": "main",
+          "area_percent": 70,
+          "why": "Brightens the room with a warm soft base different from current walls."
+        },
+        {
+          "name": "Sage Green",
+          "hex": "#7A8860",
+          "role": "accent",
+          "area_percent": 30,
+          "why": "Natural and calming accent adding visual interest and richness."
+        }
+      ],
+      "layout": {
+        "accent_wall": "wall behind the corner sofa"
+      },
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Creamy White",
+            "hex": "#F1E9D2",
+            "role": "main",
+            "area_percent": 70,
+            "wall_area_sqft": 301.0,
+            "paint_needed_gallons_estimate": 1.93,
+            "purchase_recommendation": {
+              "gallons": 2,
+              "quarts": 0,
+              "total_gallons": 2.0
+            },
+            "paint_cost_estimate": 84.0,
+            "currency": "USD"
+          },
+          {
+            "name": "Sage Green",
+            "hex": "#7A8860",
+            "role": "accent",
+            "area_percent": 30,
+            "wall_area_sqft": 129.0,
+            "paint_needed_gallons_estimate": 0.83,
+            "purchase_recommendation": {
+              "gallons": 1,
+              "quarts": 0,
+              "total_gallons": 1.0
+            },
+            "paint_cost_estimate": 42.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.0,
+          "paint_cost_total": 126.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 9,
+      "type": "pro_2to3",
+      "image": "09_pro_2to3.jpg",
+      "colors": [
+        {
+          "name": "Charcoal Slate",
+          "hex": "#3E4650",
+          "role": "main",
+          "area_percent": 65,
+          "why": "Modern and neutral base, very different from warm beige. (Adjusted to ensure noticeable contrast.)"
+        },
+        {
+          "name": "Charcoal Slate",
+          "hex": "#3E4650",
+          "role": "accent",
+          "area_percent": 20,
+          "why": "Gentle accent adding softness and warmth. (Adjusted to ensure noticeable contrast.)"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#3B3B3B",
+          "role": "trim",
+          "area_percent": 15,
+          "why": "Strong trim color to ground the scheme."
+        }
+      ],
+      "layout": {
+        "accent_wall": "wall behind the corner sofa"
+      },
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Charcoal Slate",
+            "hex": "#3E4650",
+            "role": "main",
+            "area_percent": 65,
+            "wall_area_sqft": 279.5,
+            "paint_needed_gallons_estimate": 1.79,
+            "purchase_recommendation": {
+              "gallons": 2,
+              "quarts": 0,
+              "total_gallons": 2.0
+            },
+            "paint_cost_estimate": 84.0,
+            "currency": "USD"
+          },
+          {
+            "name": "Charcoal Slate",
+            "hex": "#3E4650",
+            "role": "accent",
+            "area_percent": 20,
+            "wall_area_sqft": 86.0,
+            "paint_needed_gallons_estimate": 0.55,
+            "purchase_recommendation": {
+              "gallons": 0,
+              "quarts": 3,
+              "total_gallons": 0.75
+            },
+            "paint_cost_estimate": 31.5,
+            "currency": "USD"
+          },
+          {
+            "name": "Charcoal",
+            "hex": "#3B3B3B",
+            "role": "trim",
+            "area_percent": 15,
+            "wall_area_sqft": 64.5,
+            "paint_needed_gallons_estimate": 0.41,
+            "purchase_recommendation": {
+              "gallons": 0,
+              "quarts": 2,
+              "total_gallons": 0.5
+            },
+            "paint_cost_estimate": 21.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.25,
+          "paint_cost_total": 136.5,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 489.0,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    },
+    {
+      "index": 10,
+      "type": "creative",
+      "image": "10_creative.jpg",
+      "colors": [
+        {
+          "name": "Charcoal Slate",
+          "hex": "#3E4650",
+          "role": "main",
+          "area_percent": 40,
+          "why": "Large calming base color bringing whole room freshness. (Adjusted to ensure noticeable contrast.)"
+        },
+        {
+          "name": "Charcoal Slate",
+          "hex": "#3E4650",
+          "role": "secondary",
+          "area_percent": 20,
+          "why": "Balance warmth and contrast naturally with blue. (Adjusted to ensure noticeable contrast.)"
+        },
+        {
+          "name": "Terracotta",
+          "hex": "#B55A42",
+          "role": "accent",
+          "area_percent": 15,
+          "why": "Rich earthy tone to energize and add depth."
+        },
+        {
+          "name": "Muted Olive",
+          "hex": "#7A8C56",
+          "role": "accent",
+          "area_percent": 10,
+          "why": "Additional organic color enhancing natural feel."
+        },
+        {
+          "name": "Creamy White",
+          "hex": "#F0E8D0",
+          "role": "trim",
+          "area_percent": 15,
+          "why": "Light trim to brighten edges and unify the palette."
+        }
+      ],
+      "layout": {},
+      "estimate_us": {
+        "assumptions_used": {
+          "wall_area_sqft": 430.0,
+          "coats": 2,
+          "coverage_sqft_per_gallon_per_coat": 350.0,
+          "waste_factor": 1.12,
+          "primer_needed": false,
+          "currency": "USD",
+          "paint_price_per_gallon": 42.0,
+          "primer_price_per_gallon": 22.0,
+          "supplies_flat_cost": 55.0,
+          "labor_mode": "hourly"
+        },
+        "quantities_by_color": [
+          {
+            "name": "Charcoal Slate",
+            "hex": "#3E4650",
+            "role": "main",
+            "area_percent": 40,
+            "wall_area_sqft": 172.0,
+            "paint_needed_gallons_estimate": 1.1,
+            "purchase_recommendation": {
+              "gallons": 1,
+              "quarts": 1,
+              "total_gallons": 1.25
+            },
+            "paint_cost_estimate": 52.5,
+            "currency": "USD"
+          },
+          {
+            "name": "Charcoal Slate",
+            "hex": "#3E4650",
+            "role": "secondary",
+            "area_percent": 20,
+            "wall_area_sqft": 86.0,
+            "paint_needed_gallons_estimate": 0.55,
+            "purchase_recommendation": {
+              "gallons": 0,
+              "quarts": 3,
+              "total_gallons": 0.75
+            },
+            "paint_cost_estimate": 31.5,
+            "currency": "USD"
+          },
+          {
+            "name": "Terracotta",
+            "hex": "#B55A42",
+            "role": "accent",
+            "area_percent": 15,
+            "wall_area_sqft": 64.5,
+            "paint_needed_gallons_estimate": 0.41,
+            "purchase_recommendation": {
+              "gallons": 0,
+              "quarts": 2,
+              "total_gallons": 0.5
+            },
+            "paint_cost_estimate": 21.0,
+            "currency": "USD"
+          },
+          {
+            "name": "Muted Olive",
+            "hex": "#7A8C56",
+            "role": "accent",
+            "area_percent": 10,
+            "wall_area_sqft": 43.0,
+            "paint_needed_gallons_estimate": 0.28,
+            "purchase_recommendation": {
+              "gallons": 0,
+              "quarts": 2,
+              "total_gallons": 0.5
+            },
+            "paint_cost_estimate": 21.0,
+            "currency": "USD"
+          },
+          {
+            "name": "Creamy White",
+            "hex": "#F0E8D0",
+            "role": "trim",
+            "area_percent": 15,
+            "wall_area_sqft": 64.5,
+            "paint_needed_gallons_estimate": 0.41,
+            "purchase_recommendation": {
+              "gallons": 0,
+              "quarts": 2,
+              "total_gallons": 0.5
+            },
+            "paint_cost_estimate": 21.0,
+            "currency": "USD"
+          }
+        ],
+        "totals": {
+          "paint_total_purchase_gallons": 3.5,
+          "paint_cost_total": 147.0,
+          "primer_needed_gallons_estimate": 0.0,
+          "primer_purchase_recommendation": {
+            "gallons": 0,
+            "quarts": 0,
+            "total_gallons": 0.0
+          },
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "labor_hours_estimate": 8.5,
+          "total_estimated_cost": 499.5,
+          "currency": "USD"
+        },
+        "time_estimate_simple": "2 days (prep + 2 coats + drying between coats)"
+      }
+    }
+  ],
+  "store_equivalents": {
+    "notes": "Color matches are approximations and can vary due to lighting and sheen. Always test samples before committing.",
+    "brands_included": [
+      "sherwin_williams",
+      "benjamin_moore",
+      "behr",
+      "ppg",
+      "valspar"
+    ],
+    "colors": [
+      {
+        "hex": "#8A9A5B",
+        "original_name": "Soft Sage Green",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Sage Advice",
+            "code": "SW 6175",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Sagey",
+            "code": "2122-30",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Sage Green",
+            "code": "N400-4",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Soft Sage",
+            "code": "PPG 1012-5",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Mossy Trail",
+            "code": "6003-7C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #8A9A5B",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#5F7D95",
+        "original_name": "Dusty Blue",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Steel Wool",
+            "code": "SW 2848",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Silver Lake",
+            "code": "1584",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Dusty Blue",
+            "code": "S480-5",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Blue Haze",
+            "code": "PPG 1164-5",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Stormy Sky",
+            "code": "5007-7C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #5F7D95",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#B6593A",
+        "original_name": "Warm Terracotta",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Cavern Clay",
+            "code": "SW 7701",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Terra Cotta Tile",
+            "code": "2173-30",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Rustic Terracotta",
+            "code": "SDB-5",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Canyon Rose",
+            "code": "PPG 1142-6",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Terracotta Tile",
+            "code": "4004-6C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #B6593A",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#86688B",
+        "original_name": "Muted Lavender",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Amethyst Orchid",
+            "code": "SW 6859",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Purple Sage",
+            "code": "1475",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Lavender Mist",
+            "code": "S470-6",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Plum Blossom",
+            "code": "PPG 1086-6",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Lavender Tint",
+            "code": "5023-7C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #86688B",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#646E78",
+        "original_name": "Slate Gray",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Dovetail",
+            "code": "SW 7018",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Kendall Charcoal",
+            "code": "HC-166",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Slate Gray",
+            "code": "N520-6",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Stormy Weather",
+            "code": "PPG 1009-6",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Urban Slate",
+            "code": "4005-6C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #646E78",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#556B2F",
+        "original_name": "Deep Olive",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Olive Grove",
+            "code": "SW 6202",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Harvest Moss",
+            "code": "2143-20",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Deep Olive",
+            "code": "S440-5",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Dark Olive",
+            "code": "PPG 1013-6",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Forest Floor",
+            "code": "6001-5C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #556B2F",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#3E4650",
+        "original_name": "Charcoal Slate",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Iron Ore",
+            "code": "SW 7069",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Wrought Iron",
+            "code": "2124-10",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Charcoal Slate",
+            "code": "N510-7",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Dark Slate",
+            "code": "PPG 1010-7",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Storm Cloud",
+            "code": "4006-7C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #3E4650",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#F1E9D2",
+        "original_name": "Creamy White",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Alabaster",
+            "code": "SW 7008",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "White Dove",
+            "code": "OC-17",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Sweet Cream",
+            "code": "12",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Ivory Tick",
+            "code": "PPG 1014-1",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Vanilla Frost",
+            "code": "7003-3C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #F1E9D2",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#7A8860",
+        "original_name": "Sage Green",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Sage Green Light",
+            "code": "SW 2856",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Saybrook Sage",
+            "code": "HC-114",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Sage Leaf",
+            "code": "N390-5",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Prairie Sage",
+            "code": "PPG 1007-5",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Sagebrush",
+            "code": "6004-5C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #7A8860",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#3B3B3B",
+        "original_name": "Charcoal",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Tricorn Black",
+            "code": "SW 6258",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Kendall Charcoal",
+            "code": "HC-166",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Charcoal",
+            "code": "N510-5",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Charcoal Gray",
+            "code": "PPG 1008-7",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Nightshade",
+            "code": "4007-7C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #3B3B3B",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#B55A42",
+        "original_name": "Terracotta",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Cavern Clay",
+            "code": "SW 7701",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Pottery",
+            "code": "2164-20",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Terracotta Red",
+            "code": "SDB-6",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Terracotta Tile",
+            "code": "PPG 1143-6",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Tuscan Clay",
+            "code": "4005-6C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #B55A42",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#7A8C56",
+        "original_name": "Muted Olive",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Mellow Moss",
+            "code": "SW 6180",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Olive Grove",
+            "code": "2145-30",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Olive Branch",
+            "code": "N430-5",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Olive Branch",
+            "code": "PPG 1006-6",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Olive Branch",
+            "code": "6002-6C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #7A8C56",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      },
+      {
+        "hex": "#F0E8D0",
+        "original_name": "Creamy White",
+        "equivalents": {
+          "sherwin_williams": {
+            "name": "Eider White",
+            "code": "SW 7014",
+            "closest_match": true
+          },
+          "benjamin_moore": {
+            "name": "Navajo White",
+            "code": "OC-95",
+            "closest_match": true
+          },
+          "behr": {
+            "name": "Warm Cream",
+            "code": "N340-2",
+            "closest_match": true
+          },
+          "ppg": {
+            "name": "Buttercream",
+            "code": "PPG 1003-1",
+            "closest_match": true
+          },
+          "valspar": {
+            "name": "Creamy White",
+            "code": "7010-2C",
+            "closest_match": true
+          }
+        },
+        "what_to_say_in_store": [
+          "I want the closest match to HEX #F0E8D0",
+          "I prefer eggshell finish for washable walls",
+          "Please make a sample/quart first"
+        ]
+      }
+    ],
+    "how_to_get_best_match": [
+      "Buy sample/quart first and test on 2 walls",
+      "Check color in daylight and at night",
+      "Sheen changes appearance: matte looks lighter, satin looks deeper",
+      "If unsure, match with a physical swatch or printed sample (not phone screen)"
+    ]
+  },
+  "customer_value": {
+    "global_notes": {
+      "how_to_buy_exact_color": "Request a sample/quart first to test on your wall under your lighting conditions. Verify the color match with the provided HEX code at the store.",
+      "multi_color_note": "Buy samples or quarts of each color to test side by side on the walls. Label each sample with room location and color name to avoid confusion during application.",
+      "disclaimer": "Color matching can vary slightly due to lighting and finish sheen; always test samples before large purchases."
+    },
+    "by_image": [
+      {
+        "index": 1,
+        "recommended_paint_type": "washable interior acrylic/latex",
+        "recommended_finish": "Eggshell finish is recommended because it offers a gentle sheen that resists stains and is easy to clean, making it practical for interior walls while providing an elegant natural look.",
+        "where_to_buy": {
+          "store_types": [
+            "Sherwin-Williams",
+            "Benjamin Moore dealer",
+            "Home Depot (Behr)",
+            "Lowe's (Valspar)",
+            "Local paint store"
+          ],
+          "what_to_ask_for": [
+            "closest match to HEX #8A9A5B",
+            "washable interior wall paint",
+            "eggshell finish",
+            "sample/quart first"
+          ]
+        },
+        "exact_buy_list": {
+          "per_color": [
+            {
+              "hex": "#8A9A5B",
+              "name": "Soft Sage Green",
+              "purchase": {
+                "gallons": 3,
+                "quarts": 0,
+                "total_gallons": 3.0
+              },
+              "store_equivalents": {
+                "sherwin_williams": "Sage Advice SW 6175",
+                "benjamin_moore": "Sagey 2122-30",
+                "behr": "Sage Green N400-4",
+                "ppg": "Soft Sage PPG 1012-5",
+                "valspar": "Mossy Trail 6003-7C"
+              }
+            }
+          ],
+          "primer": {
+            "needed": false,
+            "purchase": {
+              "gallons": 0,
+              "quarts": 0,
+              "total_gallons": 0.0
+            }
+          },
+          "supplies": [
+            "tape",
+            "plastic",
+            "roller covers",
+            "angled brush",
+            "spackle",
+            "sandpaper",
+            "caulk"
+          ]
+        },
+        "timeline": {
+          "estimated_time": "2 days (prep + 2 coats + drying between coats)",
+          "prep_steps": [
+            "Clear room and protect floors with plastic sheets.",
+            "Tape around trim, windows, and ceiling edges.",
+            "Fill holes and cracks with spackle and sand smooth.",
+            "Lightly sand walls for better paint adhesion."
+          ],
+          "paint_steps": [
+            "Apply two even coats of paint in eggshell finish.",
+            "Allow recommended drying time between coats.",
+            "Carefully remove tape before final drying."
+          ],
+          "drying_notes": "Allow 2-4 hours drying time between coats; full cure may take up to 7 days."
+        },
+        "cost_breakdown": {
+          "paint_cost_total": 126.0,
+          "primer_cost_total": 0.0,
+          "supplies_cost_total": 55.0,
+          "labor_cost_total": 297.5,
+          "total_estimated_cost": 478.5,
+          "currency": "USD"
+        },
+        "quality_tips": [
+          "Use high-quality roller covers for even coverage.",
+          "Maintain a 'wet edge' while painting to avoid lap marks.",
+          "Stir paint well before and during application."
+        ],
+        "common_mistakes": [
+          "Skipping surface preparation which causes peeling.",
+          "Applying paint too thickly causing drips.",
+          "Not testing sample patches for final color and sheen."
+        ],
+        "care_after_painting": [
+          "Wait at least 2 weeks before washing walls.",
+          "Clean with mild soap and soft cloth to preserve finish.",
+          "Avoid abrasive cleaners or harsh scrubbing."
+        ]
+      }
+    ]
+  }
+}
