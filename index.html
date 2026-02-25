@@ -2547,42 +2547,114 @@
     const variantImageUrls = variants.map(v => v.imageUrl);
     const FREE_COUNT = 2;
     const TOTAL = variants.length;
-    const UNLOCK_STORAGE_KEY = "repaint_unlocked";
-
-    let idx = 0;
-    let isPaid = false;
+    const DEBUG_PAYWALL = false;
+    const UNLOCK_STORAGE_PREFIX = "repaint_unlocked_";
+    const state = {
+      isPaid: false,
+      currentIndex: 0,
+    };
     let openPaymentModal = () => {};
     const preloadCache = new Map();
 
-    try {
-      isPaid = localStorage.getItem(UNLOCK_STORAGE_KEY) === "true";
-    } catch (error) {
-      isPaid = false;
+    function sanitizeJobId(raw){
+      if (!raw) return null;
+      const cleaned = String(raw).trim().replace(/[^a-zA-Z0-9_-]/g, "");
+      if (!cleaned) return null;
+      return cleaned.slice(0, 120);
     }
+
+    function getJobIdFromUrl(){
+      try {
+        const params = new URLSearchParams(window.location.search || "");
+        const fromQuery = sanitizeJobId(params.get("job"));
+        if (fromQuery) return fromQuery;
+
+        const segments = (window.location.pathname || "").split("/").filter(Boolean);
+        for (let i = segments.length - 1; i >= 0; i -= 1) {
+          const segment = sanitizeJobId(decodeURIComponent(segments[i]));
+          if (!segment) continue;
+          if (/^run_\d{8}_\d{6}$/i.test(segment) || /^run_latest$/i.test(segment)) {
+            return segment;
+          }
+        }
+      } catch (error) {
+        // ignore URL parsing errors
+      }
+      return null;
+    }
+
+    const jobId = getJobIdFromUrl();
+    const unlockStorageKey = jobId ? `${UNLOCK_STORAGE_PREFIX}${jobId}` : null;
+    const hasToken = (() => {
+      try {
+        const params = new URLSearchParams(window.location.search || "");
+        return params.has("token");
+      } catch (error) {
+        return false;
+      }
+    })();
+
+    function readPersistedPaidState(){
+      if (!unlockStorageKey) return false;
+      try {
+        return localStorage.getItem(unlockStorageKey) === "true";
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function getStorageDebugValue(){
+      if (!unlockStorageKey) return "__no_jobid__";
+      try {
+        return localStorage.getItem(unlockStorageKey);
+      } catch (error) {
+        return "__storage_error__";
+      }
+    }
+
+    function logPaywallDebug(eventName){
+      if (!DEBUG_PAYWALL) return;
+      console.log("[paywall-debug]", {
+        event: eventName,
+        jobId,
+        unlockStorageKey,
+        storageValue: getStorageDebugValue(),
+        hasToken,
+        isPaid: state.isPaid,
+        currentIndex: state.currentIndex,
+        isLocked: isLocked(state.currentIndex),
+      });
+    }
+
+    state.isPaid = readPersistedPaidState();
 
     function isLocked(index){
-      return !isPaid && index >= FREE_COUNT;
+      return !state.isPaid && index >= FREE_COUNT;
     }
 
-    function updateAccessUI(){
-      const locked = isLocked(idx);
+    function applyLockState(){
+      const locked = isLocked(state.currentIndex);
       variantFrame.classList.toggle("locked", locked);
       variantLockOverlay.hidden = !locked;
 
-      zoomBtnControl.classList.toggle("is-available", !locked);
-      downloadAllBtnControl.classList.toggle("is-available", isPaid);
+      zoomBtnControl.classList.toggle("is-available", state.isPaid);
+      downloadAllBtnControl.classList.toggle("is-available", state.isPaid);
+      logPaywallDebug("applyLockState");
     }
 
+    const updateAccessUI = applyLockState;
+
     function setPaidState(paid, { persist = true } = {}){
-      isPaid = !!paid;
-      if (persist) {
+      state.isPaid = !!paid;
+      if (persist && unlockStorageKey) {
         try {
-          localStorage.setItem(UNLOCK_STORAGE_KEY, isPaid ? "true" : "false");
+          localStorage.setItem(unlockStorageKey, state.isPaid ? "true" : "false");
         } catch (error) {
           // ignore localStorage failures
         }
       }
-      updateAccessUI();
+      applyLockState();
+      logPaywallDebug("setPaidState");
     }
 
     function esc(s){
@@ -2848,15 +2920,15 @@
     }
 
     function setVariant(index){
-      idx = normalizeVariantIndex(index);
-      const v = variants[idx];
+      state.currentIndex = normalizeVariantIndex(index);
+      const v = variants[state.currentIndex];
       const img = v.raw;
 
       baseImg.src = baseImageUrl;
       variantImg.src = v.imageUrl;
 
       variantLabel.textContent = v.label;
-      counter.textContent = `${idx + 1}/${TOTAL}`;
+      counter.textContent = `${state.currentIndex + 1}/${TOTAL}`;
 
       variantHtml.innerHTML = buildOptionHtml(img);
 
@@ -2880,8 +2952,9 @@
 
       // Update active carousel dot
       updateCarouselDots();
-      preloadNeighborVariants(idx);
-      updateAccessUI();
+      preloadNeighborVariants(state.currentIndex);
+      applyLockState();
+      logPaywallDebug("setVariant");
     }
 
     // Initialize carousel dots
@@ -2891,7 +2964,7 @@
       for (let i = 0; i < variants.length; i++) {
         const dot = document.createElement("div");
         dot.className = "dot";
-        if (i === idx) dot.classList.add("active");
+        if (i === state.currentIndex) dot.classList.add("active");
         dot.addEventListener("click", () => {
           setVariant(i);
         });
@@ -2903,7 +2976,7 @@
     function updateCarouselDots(){
       const dots = document.querySelectorAll(".carousel-dots .dot");
       dots.forEach((dot, i) => {
-        if (i === idx) {
+        if (i === state.currentIndex) {
           dot.classList.add("active");
         } else {
           dot.classList.remove("active");
@@ -2912,11 +2985,11 @@
     }
 
     function prev(){
-      setVariant(idx - 1);
+      setVariant(state.currentIndex - 1);
     }
 
     function next(){
-      setVariant(idx + 1);
+      setVariant(state.currentIndex + 1);
     }
 
     // Buttons
@@ -2924,7 +2997,7 @@
     nextBtn.addEventListener("click", next);
 
     function handleLockedOverlayOpen(){
-      if (!isLocked(idx)) return;
+      if (!isLocked(state.currentIndex)) return;
       openPaymentModal();
     }
 
@@ -2986,7 +3059,8 @@
     initCarouselDots();
     baseImg.src = baseImageUrl;
     setVariant(0);
-    updateAccessUI();
+    applyLockState();
+    logPaywallDebug("init");
 
     // --- index-based lock + PayPal payment ------------------------------------------------
     (function(){
@@ -3206,11 +3280,11 @@
       // expand button opens variant in zoom mode
       zoomBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        if (isLocked(idx)) {
+        if (isLocked(state.currentIndex)) {
           openPaymentModal();
           return;
         }
-        openZoom(idx);
+        openZoom(state.currentIndex);
       });
       zoomPrevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevModalImage(); });
       zoomNextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextModalImage(); });
